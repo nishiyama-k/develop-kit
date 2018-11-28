@@ -5,9 +5,9 @@
 stty stop undef
 
 #alias
-alias ls='ls -CF'
-alias ll='ls -AlFh --show-control-chars --color=auto'
-alias la='ls -CFal'
+alias ls='ls -CFG'
+alias ll='ls -AlFhG'
+alias la='ls -AlFhG'
 alias mv='mv -i'
 alias rm='rm -i'
 alias cp='cp -i'
@@ -22,7 +22,7 @@ alias ......='cd ../../../../../'
 alias vi='vim'
 
 # プロンプトの表示をカスタマイズ
-export PS1="\[\033[38;5;10m\]\u@\h\[$(tput sgr0)\]\[\033[38;5;15m\]:\[$(tput sgr0)\]\[\033[38;5;117m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\\$ \[$(tput sgr0)\]\[\e[31m\]$(__git_ps1 "[%s] ")\[$(tput sgr0)\]"
+export PS1='\[\033[38;5;10m\]\u@\h\[$(tput sgr0)\]\[\033[38;5;15m\]:\[$(tput sgr0)\]\[\033[38;5;117m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\\$ \[$(tput sgr0)\]\[\e[31m\]$(__git_ps1 "[%s] ")\[$(tput sgr0)\]'
 
 # 環境変数
 export PAGER='/usr/bin/lv -c' # man とかで使われる
